@@ -27,9 +27,9 @@ pipeline {
             steps {
                 echo "Deploy to Nexus"
                 sh '''
-                    curl -v -u admin:123 \
-                    --upload-file target/msexcel-0.0.1-SNAPSHOT.jar \
-                    http://localhost:8081/repository/shubham/com/msoffice/msexcel/0.0.1/msexcel-0.0.1-SNAPSHOT.jar
+                    curl -v -u admin:admin \
+                    --upload-file target/youtube-0.0.1-SNAPSHOT.jar \
+                    http://localhost:8081/repository/omm/com/google/youtube/0.0.1/youtube-0.0.1-SNAPSHOT.jar
                 '''
             }
         }
