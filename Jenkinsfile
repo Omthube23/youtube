@@ -29,7 +29,7 @@ pipeline {
                 sh '''
                     curl -v -u admin:admin \
                     --upload-file target/youtube-0.0.1-SNAPSHOT.jar \
-                    http://172.21.16.1:8081/repository/omm/com/google/youtube/0.0.1/youtube-0.0.1-SNAPSHOT.jar
+                    http://172.30.32.1:8081/repository/omm/com/google/youtube/0.0.1/youtube-0.0.1-SNAPSHOT.jar
                 '''
             }
         }
